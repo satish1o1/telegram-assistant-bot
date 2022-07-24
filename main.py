@@ -72,7 +72,7 @@ jsonFile.close()
 
 def start(update_obj, context):
     user = update_obj.message.from_user
-    logger.info("User %s started the conversation.", user.first_name)
+    logger.info("User %s started the conversation e.", user.first_name)
     update_obj.message.reply_text(f"\tHai {user.first_name} iam student assisstant bot"
      "\n Enter you register number to proceed",
                                   reply_markup=ReplyKeyboardRemove()
