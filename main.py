@@ -23,7 +23,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # The API Key we received for our bot
-API_KEY = "5407734732:AAHb8Tb2w9Zq0hmKkWGISFbWc0DNTquYcVw"
+API_KEY = "API_KEY"
 # Create an updater object with our API Key
 updater = Updater(API_KEY)
 # Retrieve the dispatcher, which will be used to add handlersE
