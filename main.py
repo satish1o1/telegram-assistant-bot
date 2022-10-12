@@ -102,7 +102,7 @@ def director(update_obj, context):
                                       reply_markup=YES_NO_MARKUP)
         return DETAILS
     elif choice == 'MARKS':
-        update_obj.message.reply_text("""
+        update_obj.messags.reply_text("""
               CHOOSE SEMISTER
             """, reply_markup=ReplyKeyboardMarkup(
             [['SEM-1', 'SEM-2', 'SEM-3', 'SEM-4'], ['SEM-5', 'SEM-6', 'SEM-7', 'SEM-8'], ['Return to menu']]))
@@ -128,7 +128,7 @@ def director(update_obj, context):
         update_obj.message.reply_text('Press yes to continue', reply_markup=YES_NO_MARKUP)
         return TOOLS
     elif choice == 'HELP':
-        update_obj.message.reply_text('Press yes to continue', reply_markup=YES_NO_MARKUP)
+        update_obj.message.reply_text('PRESS YES TO CONTINUE', reply_markup=YES_NO_MARKUP)
         return HELP
 
 
@@ -155,13 +155,7 @@ def details(update_obj, context):
     else:
         return CANCEL
 
-#
-# def marks(update_obj, context):
-#     update_obj.message.reply_text("""
-#       CHOOSE SEMISTER
-#     """,reply_markup=telegram.ReplyKeyboardMarkup([['SEM-1','SEM-2','SEM-3','SEM-4'],['SEM-5','SEM-6','SEM-7','SEM-8'],['Return to menu']]))
-#
-#     return SEM_RESULTS
+
 
 
 def help(update_obj, context):
